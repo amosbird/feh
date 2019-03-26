@@ -404,8 +404,15 @@ void slideshow_change_image(winwidget winwid, int change, int render)
 			winwidget_reset_image(winwid);
 			winwid->im_w = w;
 			winwid->im_h = h;
+			int scr_width = scr->width;
+			int scr_height = scr->height;
+			int max_w = (w > scr_width) ? scr_width : w;
+			int max_h = (h > scr_height) ? scr_height : h;
+			double required_zoom = winwid->zoom;
+			feh_calc_needed_zoom(&required_zoom, winwid->im_w, winwid->im_h, max_w, max_h);
+			winwid->zoom = required_zoom;
 			if (render) {
-				winwidget_render_image(winwid, 1, 0);
+				winwidget_render_image(winwid, 0, 0);
 			}
 			break;
 		} else

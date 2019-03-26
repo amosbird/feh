@@ -184,6 +184,7 @@ enum key_action {
 	EVENT_delete,
 	EVENT_jump_first,
 	EVENT_jump_last,
+	EVENT_yank,
 	EVENT_action_0,
 	EVENT_action_1,
 	EVENT_action_2,

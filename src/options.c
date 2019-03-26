@@ -62,6 +62,9 @@ void init_parse_options(int argc, char **argv)
 	opt.menu_font = estrdup(DEFAULT_MENU_FONT);
 	opt.font = NULL;
 	opt.max_height = opt.max_width = UINT_MAX;
+	opt.zoom_mode = ZOOM_MODE_MAX;
+	opt.scale_down = 1;
+	opt.on_last_slide = ON_LAST_SLIDE_HOLD;
 
 	opt.start_list_at = NULL;
 	opt.jump_on_resort = 1;

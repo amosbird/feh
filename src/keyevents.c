@@ -153,19 +153,20 @@ void init_keyevents(void) {
 	feh_set_kb("scroll_right_page", 8, XK_Right, 0, 0          , 0, 0);
 	feh_set_kb("scroll_down_page" , 8, XK_Down , 0, 0          , 0, 0);
 	feh_set_kb("scroll_up_page" , 8, XK_Up   , 0, 0          , 0, 0);
-	feh_set_kb("prev_img"  , 0, XK_Left      , 0, XK_p         , 0, XK_BackSpace);
-	feh_set_kb("next_img"  , 0, XK_Right     , 0, XK_n         , 0, XK_space);
+	feh_set_kb("prev_img"  , 0, XK_Left      , 0, XK_k         , 0, XK_BackSpace);
+	feh_set_kb("next_img"  , 0, XK_Right     , 0, XK_j         , 0, XK_space);
 	feh_set_kb("jump_back" , 0, XK_Page_Up   , 0, XK_KP_Page_Up, 0, 0);
 	feh_set_kb("jump_fwd"  , 0, XK_Page_Down , 0, XK_KP_Page_Down,0,0);
 	feh_set_kb("prev_dir"  , 0, XK_bracketleft, 0, 0           , 0, 0);
 	feh_set_kb("next_dir"  , 0, XK_bracketright, 0, 0          , 0, 0);
 	feh_set_kb("jump_random" ,0, XK_z         , 0, 0            , 0, 0);
-	feh_set_kb("quit"      , 0, XK_Escape    , 0, XK_q         , 0, 0);
+	feh_set_kb("quit"      , 0, XK_Escape    , 0, XK_q         , 0, XK_I);
 	feh_set_kb("close"     , 0, XK_x         , 0, 0            , 0, 0);
 	feh_set_kb("remove"    , 0, XK_Delete    , 0, 0            , 0, 0);
 	feh_set_kb("delete"    , 4, XK_Delete    , 0, 0            , 0, 0);
-	feh_set_kb("jump_first" , 0, XK_Home      , 0, XK_KP_Home   , 0, 0);
-	feh_set_kb("jump_last" , 0, XK_End       , 0, XK_KP_End    , 0, 0);
+	feh_set_kb("jump_first" , 0, XK_Home      , 0, XK_KP_Home   , 0, XK_g);
+	feh_set_kb("jump_last" , 0, XK_End       , 0, XK_KP_End    , 0, XK_G);
+	feh_set_kb("yank" , 0, XK_y       , 0, 0    , 0, 0);
 	feh_set_kb("action_0"  , 0, XK_Return    , 0, XK_0         , 0, XK_KP_0);
 	feh_set_kb("action_1"  , 0, XK_1         , 0, XK_KP_1      , 0, 0);
 	feh_set_kb("action_2"  , 0, XK_2         , 0, XK_KP_2      , 0, 0);
@@ -176,10 +177,10 @@ void init_keyevents(void) {
 	feh_set_kb("action_7"  , 0, XK_7         , 0, XK_KP_7      , 0, 0);
 	feh_set_kb("action_8"  , 0, XK_8         , 0, XK_KP_8      , 0, 0);
 	feh_set_kb("action_9"  , 0, XK_9         , 0, XK_KP_9      , 0, 0);
-	feh_set_kb("zoom_in"   , 0, XK_Up        , 0, XK_KP_Add    , 0, 0);
-	feh_set_kb("zoom_out"  , 0, XK_Down      , 0, XK_KP_Subtract,0, 0);
+	feh_set_kb("zoom_in"   , 0, XK_Up        , 0, XK_plus    , 0, 0);
+	feh_set_kb("zoom_out"  , 0, XK_Down      , 0, XK_minus,0, 0);
 	feh_set_kb("zoom_default" , 0, XK_KP_Multiply, 0, XK_asterisk,0, 0);
-	feh_set_kb("zoom_fit"  , 0, XK_KP_Divide , 0, XK_slash     , 0, 0);
+	feh_set_kb("zoom_fit"  , 0, XK_KP_Divide , 0, XK_slash     , 0, XK_equal);
 	feh_set_kb("zoom_fill" , 0, XK_exclam    , 0, 0            , 0, 0);
 	feh_set_kb("size_to_image" , 0, XK_w      , 0, 0            , 0, 0);
 	feh_set_kb("render"    , 0, XK_KP_Begin  , 0, XK_R         , 0, 0);
@@ -203,10 +204,10 @@ void init_keyevents(void) {
 	feh_set_kb("orient_3" , 0, XK_less, 0, 0, 0, 0);
 	feh_set_kb("flip" , 0, XK_underscore, 0, 0, 0, 0);
 	feh_set_kb("mirror" , 0, XK_bar, 0, 0, 0, 0);
-	feh_set_kb("reload_minus" , 0, XK_minus, 0, 0, 0, 0);
-	feh_set_kb("reload_plus" , 0, XK_plus, 0, 0, 0, 0);
-	feh_set_kb("toggle_keep_vp" , 0, XK_k, 0, 0, 0, 0);
-	feh_set_kb("toggle_fixed_geometry" , 0, XK_g, 0, 0, 0, 0);
+	feh_set_kb("reload_minus" , 0, 0, 0, 0, 0, 0);
+	feh_set_kb("reload_plus" , 0, 0, 0, 0, 0, 0);
+	feh_set_kb("toggle_keep_vp" , 0, XK_K, 0, 0, 0, 0);
+	feh_set_kb("toggle_fixed_geometry" , 0, XK_F, 0, 0, 0, 0);
 	feh_set_kb("pan" , 0, 0, 0, 0, 0, 0);
 	feh_set_kb("zoom" , 0, 0, 0, 0, 0, 0);
 	feh_set_kb("blur" , 0, 0, 0, 0, 0, 0);
@@ -285,7 +286,7 @@ void feh_event_invoke_action(winwidget winwid, unsigned char action)
 			feh_action_run(FEH_FILE(winwid->file->data), opt.actions[action], winwid);
 
 			if (opt.hold_actions[action])
-				feh_reload_image(winwid, 1, 1);
+				feh_reload_image(winwid, 0, 1);
 			else if (stat(FEH_FILE(winwid->file->data)->filename, &st) == -1)
 				feh_filelist_image_remove(winwid, 0);
 			else
@@ -296,7 +297,7 @@ void feh_event_invoke_action(winwidget winwid, unsigned char action)
 			feh_action_run(FEH_FILE(winwid->file->data), opt.actions[action], winwid);
 
 			if (opt.hold_actions[action])
-				feh_reload_image(winwid, 1, 1);
+				feh_reload_image(winwid, 0, 1);
 			else
 				winwidget_destroy(winwid);
 		} else if (winwid->type == WIN_TYPE_THUMBNAIL) {
@@ -571,6 +572,12 @@ void feh_event_handle_generic(winwidget winwid, unsigned int state, KeySym keysy
 		if (opt.slideshow)
 			slideshow_change_image(winwid, SLIDE_LAST, 1);
 	}
+	else if (feh_is_kp(EVENT_yank, state, keysym, button)) {
+		feh_file * file = FEH_FILE(winwid->file->data);
+		static char cmd[4096];
+		snprintf(cmd, 4096, "fcp %s", shell_escape(file->filename));
+		system(cmd);
+	}
 	else if (feh_is_kp(EVENT_action_0, state, keysym, button)) {
 		feh_event_invoke_action(winwid, 0);
 	}
@@ -603,7 +610,7 @@ void feh_event_handle_generic(winwidget winwid, unsigned int state, KeySym keysy
 	}
 	else if (feh_is_kp(EVENT_zoom_in, state, keysym, button)) {
 		winwid->old_zoom = winwid->zoom;
-		winwid->zoom = winwid->zoom * 1.25;
+		winwid->zoom = winwid->zoom * 1.024;
 
 		if (winwid->zoom > ZOOM_MAX)
 			winwid->zoom = ZOOM_MAX;
@@ -617,7 +624,7 @@ void feh_event_handle_generic(winwidget winwid, unsigned int state, KeySym keysy
 	}
 	else if (feh_is_kp(EVENT_zoom_out, state, keysym, button)) {
 		winwid->old_zoom = winwid->zoom;
-		winwid->zoom = winwid->zoom * 0.80;
+		winwid->zoom = winwid->zoom * 0.9765625;
 
 		if (winwid->zoom < ZOOM_MIN)
 			winwid->zoom = ZOOM_MIN;
